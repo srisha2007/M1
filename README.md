@@ -57,27 +57,34 @@ Write a C program to read A values and check whether A is positive number or not
 
 # PROGRAM:
 ```
- #include <stdio.h>
- int main()
- {
-    int a;
-    scanf("%d",&a);
-    if (a>=0)
-    {
-        printf("Number is positive.");
+#include <stdio.h>
+
+int main() {
+    int A;
+
+    
+    printf("Enter a value for A: ");
+    scanf("%d", &A);
+
+
+    if (A > 0) {
+        printf("A is a positive number.\n");
+    } else if (A == 0) {
+        printf("A is zero.\n");
+    } else {
+        printf("A is a negative number.\n");
     }
-    else
-    {
-        printf("Number is negative.");
-    }
-return 0;
- }
+
+    return 0;
+}
+
 ```
 # OUTPUT:
 
 
 
-![Screenshot 2025-04-28 183618](https://github.com/user-attachments/assets/be6f37bf-f519-48f6-8275-b17df406b05d)
+![image](https://github.com/user-attachments/assets/ca35d8b3-b332-4c01-aa5c-74361560a03d)
+
 
 
 
